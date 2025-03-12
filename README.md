@@ -12,7 +12,7 @@
 - Получение пользователя по ID
 - Эндпоинт статуса для проверки работоспособности сервиса
 - Валидация входных данных с использованием Pydantic моделей
-- Комплексный набор тестов
+- Набор тестов
 
 ## API Эндпоинты
 
@@ -32,40 +32,11 @@
 
 Возвращает постраничный список всех пользователей.
 
-Ответ:
-
-```json
-{
-  "items": [
-    {
-      "id": 1,
-      "email": "user@example.com",
-      "first_name": "John",
-      "last_name": "Doe",
-      "avatar": "https://example.com/avatar.jpg"
-    }
-  ],
-  "total": 10,
-  "page": 1,
-  "size": 10,
-  "pages": 1
-}
-```
-
 ### GET /api/users/{user_id}
 
 Возвращает конкретного пользователя по ID.
 
-Ответ:
 
-```json
-{
-  "id": 1,
-  "email": "user@example.com",
-  "first_name": "John",
-  "last_name": "Doe",
-  "avatar": "https://example.com/avatar.jpg"
-}
 ```
 
 ## Установка
@@ -119,16 +90,7 @@ python main.py
 Для запуска тестов:
 
 ```bash
-pytest tests/
-```
-
-Для запуска определенных категорий тестов:
-
-```bash
-pytest -m "smoke"  # Запуск smoke тестов
-pytest -m "users_tests"  # Запуск тестов пользователей
-pytest -m "pagination"  # Запуск тестов пагинации
-pytest -m "not smoke" # Запуск всех тестов, кроме smoke
+pytest -v tests
 ```
 
 ## Модели данных
