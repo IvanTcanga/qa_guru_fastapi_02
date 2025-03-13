@@ -31,7 +31,7 @@ def get_user(user_id: int) -> User:
 
 
 @app.get("/api/users/", response_model=Page[User], status_code=HTTPStatus.OK)
-def get_users() -> list[User]:
+def get_users() -> Page[User]:
     return paginate(users)
 
 
