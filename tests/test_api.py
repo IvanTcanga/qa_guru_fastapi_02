@@ -2,7 +2,7 @@ from http import HTTPStatus
 import allure
 import pytest
 import requests
-from models.User import User
+from app.models.User import User
 
 
 @pytest.fixture

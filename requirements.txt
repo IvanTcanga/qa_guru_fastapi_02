@@ -4,7 +4,8 @@ email-validator
 python-dotenv~=1.0.1
 requests~=2.32.3
 pydantic~=2.8.2
-
+psycopg2-binary
+sqlalchemy
+sqlmodel
 fastapi-pagination
-
 uvicorn~=0.22.0

@@ -1,7 +1,7 @@
 import pytest
 import requests
 from http import HTTPStatus
-from models.User import *
+from app.models.User import *
 
 
 class TestSmoke:

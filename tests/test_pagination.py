@@ -1,5 +1,5 @@
 import pytest
-from models.User import User
+from app.models.User import User
 import requests
 import allure
 from http import HTTPStatus
